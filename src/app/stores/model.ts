@@ -6,7 +6,7 @@ export interface RDX {
   _agencies: OptionSelect[];
   _typesMissions: OptionSelect[];
   _launches: Launch[];
-  typesRules: any[];
+  typesRules: any;
 
   // PUBLIC STORE
   typeValue: selectorTypeValue;

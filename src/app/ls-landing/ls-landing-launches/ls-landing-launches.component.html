@@ -1,0 +1,10 @@
+<ol *ngIf="launches$">
+    <li *ngFor="let l of launches$ | async">
+        {{l.name}}
+        <span>{{l.net}}</span>
+    </li>
+</ol>
+
+<span *ngIf="!launches$">
+    No hay lanzamientos registrados
+</span>

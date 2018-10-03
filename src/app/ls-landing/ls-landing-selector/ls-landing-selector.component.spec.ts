@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { LsSearchLaunchesComponent } from './searchLaunches.component';
+import { LsLandingSelectorComponent } from './ls-landing-selector.component';
 
-describe('BuscadorLanzamientosComponent', () => {
-  let component: LsSearchLaunchesComponent;
-  let fixture: ComponentFixture<LsSearchLaunchesComponent>;
+describe('BuscadorCriteriosComponent', () => {
+  let component: LsLandingSelectorComponent;
+  let fixture: ComponentFixture<LsLandingSelectorComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [LsSearchLaunchesComponent]
+      declarations: [LsLandingSelectorComponent]
     })
       .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LsSearchLaunchesComponent);
+    fixture = TestBed.createComponent(LsLandingSelectorComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

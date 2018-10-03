@@ -1,11 +1,13 @@
-<ls-landing-rules [tittle]="titleValues"
+<ls-landing-selector [tittle]="titleValues"
                   [values]="typeRule$"
+                  [valueSelected]="ruleSelected"
                   (changeRule)="changeTypeRule($event)">
-</ls-landing-rules>
-<ls-landing-rules [tittle]="titleRules"
+</ls-landing-selector>
+<ls-landing-selector [tittle]="titleRules"
                   [values]="typeSelector$"
+                  [valueSelected]="valueSelected"
                   (changeRule)="changeValues($event)">
-</ls-landing-rules>
+</ls-landing-selector>
 <ls-landing-launches></ls-landing-launches>
 
 

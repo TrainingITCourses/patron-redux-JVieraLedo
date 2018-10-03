@@ -5,8 +5,8 @@ import {FormsModule} from '@angular/forms';
 
 import {AppComponent} from './ls-root/app.component';
 import {LsLandingComponent} from './ls-landing/ls-landing.component';
-import {LsSearchRuleComponent} from './ls-landing/searchRule/searchRule.component';
-import {LsSearchLaunchesComponent} from './ls-landing/searchLaunches/searchLaunches.component';
+import {LsLandingSelectorComponent} from './ls-landing/ls-landing-selector/ls-landing-selector.component';
+import {LsSearchLaunchesComponent} from './ls-landing/ls-landing-launches/ls-landing-launches.component';
 import {RDXStore} from './stores/store.state';
 
 
@@ -14,7 +14,7 @@ import {RDXStore} from './stores/store.state';
   declarations: [
     AppComponent,
     LsLandingComponent,
-    LsSearchRuleComponent,
+    LsLandingSelectorComponent,
     LsSearchLaunchesComponent
   ],
   imports: [

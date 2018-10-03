@@ -1,11 +1,11 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
-  selector: 'ls-landing-rules',
-  templateUrl: './searchRule.component.html'
+  selector: 'ls-landing-selector',
+  templateUrl: './ls-landing-selector.component.html'
 })
 
-export class LsSearchRuleComponent implements OnInit {
+export class LsLandingSelectorComponent implements OnInit {
   @Input() tittle: String;
   @Input() valueSelected: string;
   @Input() values: any[];

@@ -65,8 +65,7 @@ export class RDXStore {
     }
   };
 
-  public selectSnapShot = (slice: RDXSlideTypes): any[] => {
-    console.log('LAUNCHES slice',slice);
+  public selectSnapShot = (slice: RDXSlideTypes): any => {
     switch (slice) {
       case RDXSlideTypes.typeRule:
         return [...this.state.typesRules];
@@ -75,7 +74,6 @@ export class RDXStore {
         return [...this.state.typeSelector];
         break;
       case RDXSlideTypes.launches:
-        console.log('LAUNCHES',this.state);
         return [...this.state.launches];
         break;
     }
