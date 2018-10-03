@@ -1,0 +1,6 @@
+<div *ngIf="launches$">
+  {{launchesCount()}}
+</div>
+<ol>
+  <li *ngFor="let l of launches$">{{l.name}}<span>{{l.net}}</span></li>
+</ol>

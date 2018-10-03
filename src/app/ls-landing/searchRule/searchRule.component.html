@@ -1,0 +1,8 @@
+<div style="padding: 10px">
+  <label for="rulesValues"> {{tittle}} : </label>
+  <select id="rulesValues" (change)="changeValues($event)" [(ngModel)]="valueSelected">
+    <option *ngFor="let opt of values;" [value]="opt.value">
+      {{opt.viewValue}}
+    </option>
+  </select>
+</div>
